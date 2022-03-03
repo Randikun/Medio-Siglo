@@ -41,7 +41,7 @@ export default function Home() {
           <Cuando />
         </div>
       </section>
-      <section title="FOTOS" id="FOTOS" className="fotosSeccion">
+      <section title="FOTOS" id="FOTOS" >
         <Fotos />
       </section>
       <section title="CONFIRMAR" id="CONFIRMAR">

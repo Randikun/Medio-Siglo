@@ -4,11 +4,13 @@ const addAsistencia = async (req, res) => {
   let { nombre } = req.body;
   
   try {
+    if(nombre){
     const newAssistant = await Asistencia.create({
       nombre: nombre,
     });
 
-    res.json(newAssistant );
+    res.json(newAssistant );}
+    else res.send('faltan datos')
   } catch {
     res.status(500).send("ha ocurrido un error");
   } 
@@ -17,11 +19,15 @@ const addAsistencia = async (req, res) => {
 const addFalluta = async (req, res) => {
     let { nombre } = req.body;
     try {
-      const newFalluta = await Falluta.create({
-        nombre: nombre,
-      });
-  
-      res.json(newFalluta);
+      if (nombre){
+        const newFalluta = await Falluta.create({
+          nombre: nombre,
+        });
+    
+        res.json(newFalluta);
+      }
+      else res.send('faltan datos')
+
     } catch {
       res.status(500).send("ha ocurrido un error");
     }

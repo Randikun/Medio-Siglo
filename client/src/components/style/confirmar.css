@@ -9,11 +9,16 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.contNombre{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
 .nombre {
+    width: 100%;
     color: #fff;
     height: 2em;
-    width: 50%;
     border: none;
     background-color: transparent;
     outline: none;
@@ -22,7 +27,7 @@
 
 .nombre:hover{
     height: 2em;
-    width: 50%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid white;
 }

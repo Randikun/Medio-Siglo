@@ -14,7 +14,7 @@ export default function Mensajes() {
   }, [dispatch]);
 
   return (
-    <div >
+    <div className="msgcontainer" >
       <section>
       <ul className="nav">
         <li className="link">
@@ -34,17 +34,22 @@ export default function Mensajes() {
             <img src={mafalda} />
           </figure>
         </section>
+        <div className="cont">
         <AddMensaje />
         <section className="msgs">
           {mensajes.length > 0
             ? mensajes.map((m) => (
-                <div>
-                  {m.mensaje}
-                  <span>{m.autor}</span>
+                <div className="msg">
+                  <p>
+                    {m.mensaje}
+                    </p>
+                  <span className="by">{m.autor}</span>
                 </div>
               ))
             : null}
         </section>
+
+        </div>
       </div>
     </div>
   );
