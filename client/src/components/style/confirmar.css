@@ -1,0 +1,60 @@
+.confirmarCont {
+    height: 10em;
+    color: white;
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nombre {
+    color: #fff;
+    height: 2em;
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+
+}
+
+.nombre:hover{
+    height: 2em;
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+
+
+
+select {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 1em;
+    border: 1px solid white;
+    margin: 1em;
+}
+
+option {
+    color: #fff;
+    padding: 0.1em 1em 0.1em 1em;
+    border: 2px solid white;
+    margin: 1em;
+}
+
+.submit {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 1em;
+    border: 1px solid white;
+    margin: 1em;
+
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.131);
+}

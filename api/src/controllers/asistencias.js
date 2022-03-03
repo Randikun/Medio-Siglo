@@ -2,15 +2,16 @@ const { Asistencia, Falluta } = require("../db");
 
 const addAsistencia = async (req, res) => {
   let { nombre } = req.body;
+  
   try {
     const newAssistant = await Asistencia.create({
       nombre: nombre,
     });
 
-    res.send("asistencia de " + newAssistant + " confirmada");
+    res.json(newAssistant );
   } catch {
     res.status(500).send("ha ocurrido un error");
-  }
+  } 
 };
 
 const addFalluta = async (req, res) => {
@@ -20,7 +21,7 @@ const addFalluta = async (req, res) => {
         nombre: nombre,
       });
   
-      res.send("Ausencia confirmada, que pena");
+      res.json(newFalluta);
     } catch {
       res.status(500).send("ha ocurrido un error");
     }

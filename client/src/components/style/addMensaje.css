@@ -1,0 +1,25 @@
+.autor{
+    color: black;
+}
+
+.mensajeCont{
+    width: 70%;
+    padding: 1em;
+    margin: auto;
+    
+}
+.msgForm{
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column
+}
+.mensaje{
+    height:60% ;
+}
+
+.submitMsg{
+    width: fit-content;
+}

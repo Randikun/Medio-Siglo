@@ -1,0 +1,63 @@
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    overflow-x: hidden;   
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    background-image: url("../../resources/mamaBB.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+
+}
+
+
+h1 {
+    display: flex;
+    justify-content: end;
+    margin-top: -20%;
+    font-size: 4em;
+    color: white;
+    width: 90%;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.player{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    margin-right:1em ;
+}
+
+
+.dondecuando {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+
+.donde {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.cuando {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.fotosSeccion{
+    height: 60%;
+}

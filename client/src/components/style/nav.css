@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em 0 2em;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}

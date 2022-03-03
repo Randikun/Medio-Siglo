@@ -22,7 +22,7 @@ async function postMensaje(req, res) {
                 mensaje:mensaje,
             });          
 
-        res.send('mensaje posteado correctamente');
+        res.json(postedMensaje);
 
     } catch (error) {
         res.status(404).json("ha ocurrido un error")

@@ -1,0 +1,26 @@
+.cuandoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.p {
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+.title{
+    font-size: 3em;
+    
+    width: 100%;
+    align-self: flex-start;
+  
+    
+}
