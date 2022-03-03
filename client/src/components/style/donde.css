@@ -104,3 +104,20 @@ height: 100%;
     width:100%;
     position:absolute;
 }
+
+@media screen and (min-width: 280px) and (max-width: 750px) {
+    .location {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+    }
+    
+    .dire {
+        margin: 0;
+        font-size: 1em;
+        line-height: 2;
+        display: flex;
+        justify-content: center;
+    }
+    }

@@ -3,14 +3,13 @@
     width: 40%;
     padding: 1em;
     margin: 1em;
-    
     display: flex;
     justify-content: center;
-    
     height: 20em;
     
 }
 .msgForm{
+    padding: 1em;
     width: 100%;
     display: flex;
     justify-items: center;
@@ -37,3 +36,19 @@
     line-height: 2;
     border: 2px solid black;
 }
+
+@media screen and (min-width: 280px) and (max-width: 750px) {
+    .mensajeCont{
+width: 100%; 
+padding: 0; 
+height: 40%;
+margin: 0;  }
+.mensaje{
+   margin-bottom: 1em;
+}
+.autor{
+    line-height: 1;
+}
+
+      
+ }

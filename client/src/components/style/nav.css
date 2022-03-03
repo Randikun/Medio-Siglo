@@ -11,3 +11,14 @@
     cursor: pointer;
     color: white;
 }
+
+
+@media screen and (min-width: 280px) and (max-width: 750px) {
+.nav{
+    padding: 0 0.1em 0 0.1em;
+}
+.link{
+font-size: 0.9em;
+padding: 0.5em;
+}
+}

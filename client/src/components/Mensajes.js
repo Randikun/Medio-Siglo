@@ -40,7 +40,7 @@ export default function Mensajes() {
           {mensajes.length > 0
             ? mensajes.map((m) => (
                 <div className="msg">
-                  <p>
+                  <p className="msgtext">
                     {m.mensaje}
                     </p>
                   <span className="by">{m.autor}</span>

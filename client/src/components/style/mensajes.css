@@ -5,6 +5,7 @@
 }
 
 .msgPage {
+    overflow: hidden;
     background-color: white;
     color: black;
     width: 100vw;
@@ -66,9 +67,46 @@
     padding: 1em;
 
 }
+.msgtext{
+    margin: 0.2em;
+    font-size: 1.5em;
 
+}
 .by {
+    margin: 0.2em;
+    font-size: 1em;
 
+    font-weight: bold;
     display: flex;
     justify-content: end;
+}
+
+
+
+@media screen and (min-width: 280px) and (max-width: 750px) {
+   .cont{
+       flex-direction: column;
+       padding: 0;
+   }
+
+.mafalda{
+    margin: 0;
+}
+   .msgs {
+       padding: 0;
+    width: 100%;
+    margin: 0;
+    height: 60%;
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax('min-content', 1fr));
+    gap: 0.5em;
+    overflow: auto;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+.msgtext{
+    font-size: 1.3em;
+
+}
+
 }
