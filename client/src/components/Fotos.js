@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import "./style/fotos.css";
 import Carousel from "react-elastic-carousel";
-import { useDispatch } from "react-redux";
-import getFotos from "../actions/getFotos";
 import {fotosCarrusel} from "../utils"
 
 export default function Fotos() {
@@ -10,13 +8,7 @@ export default function Fotos() {
     { width: 1, itemsToShow: 1 },
     { width: 1200, itemsToShow: 2 },
   ];
-  const dispatch = useDispatch();
-  
-  useEffect(() => {
-    dispatch(getFotos());
-  }, [dispatch]);
-
-  
+    
   return (
     <div className="divRey">
       <Carousel

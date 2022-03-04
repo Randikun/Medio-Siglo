@@ -4,7 +4,7 @@ export default function bulkFotos(body) {
   return async function (dispatch) {
     try {
       const response = await axios.post(
-        `http://localhost:3001/fotos/bulk`,
+        `/fotos/bulk`,
         body
       );
       return dispatch({ type: "BULK_FOTOS", payload: response.data });

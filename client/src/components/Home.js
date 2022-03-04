@@ -10,21 +10,15 @@ import ReactAudioPlayer from "react-audio-player";
 import song from "../resources/rayOfLight.mp3";
 
 import "./style/home.css";
-import { useDispatch } from "react-redux";
-import bulkFotos from "../actions/bulkFotos";
-import { fotosBulk } from "../resources/fotosBulk";
-
 const insopor = () => {
   const audioPlayer = document.getElementById("audio");
   audioPlayer.play();
 };
 export default function Home() {
-  const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(bulkFotos(fotosBulk));
     window.addEventListener("mouseover", insopor());
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className="container">
@@ -41,7 +35,7 @@ export default function Home() {
           <Cuando />
         </div>
       </section>
-      <section title="FOTOS" id="FOTOS" >
+      <section title="FOTOS" id="FOTOS" className="fotosSeccion">
         <Fotos />
       </section>
       <section title="CONFIRMAR" id="CONFIRMAR">
