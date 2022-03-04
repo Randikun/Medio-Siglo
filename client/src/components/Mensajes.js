@@ -31,7 +31,7 @@ export default function Mensajes() {
       <div className="msgPage">
         <section>
           <figure className="mafalda">
-            <img src={mafalda} />
+            <img src={mafalda} alt='mafalda'/>
           </figure>
         </section>
         <div className="cont">
