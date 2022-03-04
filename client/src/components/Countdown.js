@@ -26,7 +26,6 @@ export default function Countdown() {
   setInterval(() => {
     setRemainTime(getRemainTime("Apr 03 2022 00:00:00 GMT-0500"));
   });
-  // timerUpdate()
 
   return (
     <div className="countdown">
