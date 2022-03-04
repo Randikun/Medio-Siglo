@@ -4,7 +4,7 @@ export default function asistira(body) {
   return async function (dispatch) {
     try {
       const response = await axios.post(
-        `http://localhost:3001/asistencias/falluta`,
+        `/asistencias/falluta`,
         body
       );
       return dispatch({ type: "NO_ASISTIRA", payload: response.data });
