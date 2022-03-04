@@ -27,7 +27,7 @@ export default function Fotos() {
         >
         {fotosCarrusel.length > 0
           ? fotosCarrusel.map((el, i) => (
-                <div className="itemCarousel">
+                <div  key={i} className="itemCarousel">
                   <img
                     className="img"
                     alt=""

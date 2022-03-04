@@ -39,7 +39,7 @@ export default function Mensajes() {
         <section className="msgs">
           {mensajes.length > 0
             ? mensajes.map((m) => (
-                <div className="msg">
+                <div key={m.id} className="msg">
                   <p className="msgtext">
                     {m.mensaje}
                     </p>
