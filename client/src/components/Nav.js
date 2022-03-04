@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
 import "./style/nav.css";
 
 export default function Nav() {
@@ -8,43 +7,16 @@ export default function Nav() {
     <div>
       <ul className="nav">
         <li className="link">
-          <Link
-            activeClass="active"
-            to="DONDECUANDO"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            DONDE Y CUANDO
-          </Link>
+          <a href="#DONDECUANDO" className="link" >DONDE Y CUANDO </a>
         </li>
         <li className="link">
-          <Link
-            activeClass="active"
-            to="CONFIRMAR"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            CONFIRMAR ASISTENCIA
-          </Link>
+          <a href="#CONFIRMAR" className="link" > CONFIRMAR ASISTENCIA </a>
         </li>
 
         <li className="link">
-          <Link
-            activeClass="active"
-            to="FOTOS"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            FOTOS
-          </Link>
+          <a href="#FOTOS" className="link" > FOTOS </a>
         </li>
-        <li className="link">
+        <li className="link" >
           <NavLink  to="/mensajes" className="link"> MENSAJES </NavLink>
         </li>
       </ul>
