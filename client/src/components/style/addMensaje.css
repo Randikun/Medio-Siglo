@@ -1,11 +1,11 @@
 
 .mensajeCont{
-    width: 40%;
     padding: 1em;
     margin: 1em;
     display: flex;
     justify-content: center;
     height: 20em;
+    width: 40%;
     
 }
 .msgForm{
@@ -41,7 +41,7 @@
     .mensajeCont{
 width: 100%; 
 padding: 0; 
-height: 40%;
+height: 30%;
 margin: 0;  }
 .mensaje{
    margin-bottom: 1em;
