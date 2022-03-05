@@ -38,10 +38,9 @@ h1 {
 
 
 .dondecuando {
-    padding: 1em;
+    padding: 0 1em 0 1em;
     display: flex;
     flex-direction: row;
-    height: 60%;
 }
 
 .donde {
@@ -56,21 +55,4 @@ h1 {
     justify-content: center;
 }
 
-.fotosSeccion{
-    height: 60%;
-}
-@media screen and (min-width: 320px) and (max-width: 1100px) {
-    .dondecuando {
-        padding: 0;
-        margin: 1em;
-        height: 35%;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 450px) {
-   
-    .fotosSeccion{
-        height: 5em;
-    }
-}
 

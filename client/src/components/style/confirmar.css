@@ -72,7 +72,7 @@ option {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 580px) {
+@media screen and (min-width: 280px) and (max-width: 580px) {
     .confirmarCont {
         height: 5em;
     }
