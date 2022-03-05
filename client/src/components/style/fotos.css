@@ -1,123 +1,36 @@
-.divRey {
-    margin: 3em;
-    background-color: rgba(19, 19, 19, 0.083);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    height:25em;
-}
-
-.carousel {
-    width: 100%;
-    height: 100%;
-    padding-top: 1em;
-
-}
-
-
-.divRey .carousel button {
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-    border: none;
-    box-shadow: none;
-    font-size: 1em;
-}
-
-.divRey .carousel button:hover {
-    color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.133);
-    border: none;
-}
-.divRey .carousel button:focus {
-    color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.133);
-      border: none;
-}
-
-
-
-
-.itemCarousel {
-
-    width: 100%;
-    height: 100%;
-    align-self: center;
+.carousel{
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 1;
+    justify-content: space-around;
+    margin: 0 1em 0 1em;
+}
+.pic{
+    height: 30em;
+    width: 35em;
 }
 
-.carousel .itemCarousel .img {
-    width: 70%;
+.foto{
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 5px;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 450px) {
-    .divRey {
-         padding: 0;
-        height:10em;
-        margin: 0;
-    }
-    
-    .carousel {
-        margin: 0;
     width: 100%;
-    height: 60%;
-   padding: 0;
+    object-fit: contain;
 
 }
 
-.sc-iCfMLu.gZZBOx.rec.rec-pagination{
-    display: none;
+.btnicon{
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius:50px;
+   border: 2px solid white;
+   width: 2em;
+   height: 2em;
 }
-  
- .itemCarousel{
-     height: min-content;
-     width: 100%;
-     margin: 0;
- }
-.carousel .itemCarousel .img {
-    width: 100%;
-    height: 120%;
-   
-  }
+.icon{
+    width: 1em;
+    height: 1em;
+    margin: auto;
 }
-  @media screen and (min-width: 320px) and (max-width: 700px) {
-    .divRey {
-        margin: 0;
-        background-color: black;
-        
-        height:15em;
+@media screen and (min-width: 280px) and (max-width: 700px) {
+    .pic {
+        height: 15em;
+        width: 25em;
     }
-    .sc-iCfMLu.gZZBOx.rec.rec-pagination{
-        display: none;
-    }
- 
-.carousel .itemCarousel .img {
-    width: 100%;
-    height: 100%;
-   
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 1024px) {
-    .divRey {
-        margin-top: 5em;
-     
-        padding: 1em;
-        height:20em;
-    }
-    .sc-iCfMLu.gZZBOx.rec.rec-pagination{
-        display: none;
-    }
-  .carousel .itemCarousel .img {
-    width: 100%;
-    height: 100%;
-   
-  }
- 
 }

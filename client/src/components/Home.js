@@ -27,6 +27,8 @@ export default function Home() {
           <h1>MEDIO SIGLO </h1>
           <Countdown className="time"/>
       </section>
+      <div className="alejate">
+
       <section className="dondecuando" title="DONDECUANDO" id="DONDECUANDO">
         <div className="donde">
           <Donde />
@@ -41,6 +43,7 @@ export default function Home() {
       <section title="CONFIRMAR" id="CONFIRMAR">
         <ConfirmarAsistencia />
       </section>
+      </div>
       <div className="player">
 
         <ReactAudioPlayer id="audio" src={song} autoPlay={true} controls />
