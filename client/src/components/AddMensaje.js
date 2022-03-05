@@ -7,14 +7,21 @@ export function validate(state) {
   let errors = {};
   if (!state.autor) {
     errors.autor = "¿Cómo voy a saber de quien es el mensaje?";
+    errors.thereIsntMessage = true
   } else if (!state.mensaje) {
     errors.mensaje = "¿En serio no tenes nada para decirme?";
+    errors.thereIsntMessage = true
+  }
+  else {
+    errors.thereIsntMessage = false
   }
   return errors;
 }
 
 export default function AddMensaje() {
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState({
+    thereIsntMessage: true
+  });
 
   const dispatch = useDispatch();
   const [state, setState] = useState({
@@ -39,7 +46,10 @@ export default function AddMensaje() {
       dispatch(addMensaje(state));
       setState({
       autor:'',
-      mensaje:''})
+      mensaje:'',})
+      setErrors({
+        thereIsntMessage: true
+      });
     }
   }
   return (
@@ -66,10 +76,12 @@ export default function AddMensaje() {
           onChange={(e) => handleInputChange(e)}
         />
          {errors.mensaje && <h5 className="error">{errors.mensaje}</h5>}
-      
-              <button className="submitMsg" type="submit">
-              ENVIAR
-            </button>
+           {
+             !errors.thereIsntMessage ? (
+             <button className="submitMsg" type="submit"> ENVIAR </button>
+           ) : null
+           }
+              
       
         
       </form>

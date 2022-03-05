@@ -16,14 +16,15 @@ async function getMensajes(req, res) {
 
 async function postMensaje(req, res) { 
     let { autor, mensaje } = req.body;
+    
     try {
-        if (autor && mensaje){
+        if (autor.trim() != '' && mensaje.trim() != ''){
             const postedMensaje = await Mensaje.create({
                 autor: autor,
                 mensaje:mensaje,
             });          
 
-        res.json(postedMensaje);}
+         return res.json(postedMensaje);}
         else res.send('faltan datos')
 
     } catch (error) {
